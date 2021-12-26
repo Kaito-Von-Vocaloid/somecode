@@ -1,3 +1,5 @@
+const axios = require('axios');
+
 axios.get('https://www.google.com.tr/search?q=dolar+tl').then(res => {
 	var data = res.data;
 	var splN = data.toString().split('\n');
